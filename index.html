@@ -112,7 +112,8 @@
   }
 
   btn.addEventListener('click', function () {
-    root.classList.toggle('inv');
+    var inverted = root.classList.toggle('inv');
+    document.title = inverted ? 'DAVI' : 'ANA';
     burst();
   });
   btn.addEventListener('contextmenu', function (e) { e.preventDefault(); });
